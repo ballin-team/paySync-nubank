@@ -153,3 +153,5 @@ fabric.properties
 
 node_modules
 coverage
+lib
+.idea

@@ -1,4 +1,4 @@
-import {NApiRequest, NNubankClient} from '../../types';
+import {NApiRequest} from '../../src';
 
 export const configMock: NApiRequest.IInput = {
   testEnv: true,

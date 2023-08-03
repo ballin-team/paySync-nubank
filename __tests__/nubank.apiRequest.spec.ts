@@ -1,6 +1,5 @@
-import {NubankApiRequest} from '../src/nubank.apiRequest';
 import {defineApiRequestConfigEnv} from './mocks/apiRequestConfig.mock';
-import {NApiRequest} from '../src';
+import {NApiRequest, NubankApiRequest} from '../src';
 import nacl from 'tweetnacl';
 import {AxiosResponse} from 'axios';
 

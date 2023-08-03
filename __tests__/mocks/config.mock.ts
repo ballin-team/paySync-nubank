@@ -1,4 +1,4 @@
-import {NNubankClient} from '../../types';
+import {NNubankClient} from '../../src';
 
 export const configMock: NNubankClient.IInput = {
   testEnv: true,
