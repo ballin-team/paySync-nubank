@@ -1,1 +1,1 @@
-# PaySync
+# paySync-nubank
