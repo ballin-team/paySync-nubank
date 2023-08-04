@@ -1,5 +1,5 @@
 {
-  "name": "paysync-nubank",
+  "name": "@ballin-team/paysync-nubank",
   "version": "0.0.0-development",
   "description": "",
   "main": "./lib/cjs/index.js",
