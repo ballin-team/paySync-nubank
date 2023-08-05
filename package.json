@@ -60,5 +60,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "keywords": ["nubank", "NuPay", "NuPay business", "NuPay for business", "nubank api", "NuPay API"]
 }
