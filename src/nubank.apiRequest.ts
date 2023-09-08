@@ -7,7 +7,7 @@ export class NubankApiRequest {
   protected config: NApiRequest.IInput;
   public api: AxiosInstance;
   protected publicKey?: string;
-  protected constructor(input: NApiRequest.IInput) {
+  constructor(input: NApiRequest.IInput) {
     this.config = input;
     this.api = axios.create({
       baseURL: this.setHost(input.testEnv),
@@ -29,7 +29,7 @@ export class NubankApiRequest {
   private async getSigningKey(): Promise<string> {
     const path = '/security/request-signing-keys';
     try {
-      const {status, data} = await this.api.get<NApiRequest.ISigningKeyResponse>(path);
+      const { data} = await this.api.get<NApiRequest.ISigningKeyResponse>(path);
       return data.publicKey;
     } catch (e) {
       throw new NubankApiError({ path, data: e });

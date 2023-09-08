@@ -1,12 +1,9 @@
 import {defineApiRequestConfigEnv} from './mocks/apiRequestConfig.mock';
-import {NApiRequest, NubankApiRequest} from '../src';
+import {NubankApiRequest} from '../src';
 import nacl from 'tweetnacl';
 import {AxiosResponse} from 'axios';
 
 class DummyImplementation extends NubankApiRequest {
-  constructor(input: NApiRequest.IInput) {
-    super(input)
-  }
   async checkAuthenticMessage(input: AxiosResponse) {
     return await this.isAuthenticMessage(input);
   }
