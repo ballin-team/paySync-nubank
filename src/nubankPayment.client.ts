@@ -11,10 +11,6 @@ import {NubankApiError} from './helpers';
 import {NubankApiRequest} from './nubank.apiRequest';
 
 export class NubankPaymentClient extends NubankApiRequest {
-  constructor(input: NApiRequest.IInput) {
-    super(input);
-  }
-
   /**
    * This method returns available payment methods configured for the merchant and the information each method requires on payment creation.
    *
